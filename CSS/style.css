@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::selection{
+    background-color: rgb(120, 200, 180);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.body-image{
+    
+    background-image: url(../images/birds.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.strike{
+    width: 20px;
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    height: 2px;
+}
+nav p a{
+  
+    color:white ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+.active{
+    border-bottom: 2px solid rgb(34, 161, 129);
+}
+li{
+    color: white;
+   list-style: none;
+   padding: 0.8rem 0.6rem;
+}
+ li a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-right: 0.4rem;
+}
+.contacts{
+    border: 2px solid rgb(34, 161, 129);
+    padding: 0.8rem 0.6rem;
+    cursor: pointer;
+}
+.content-desc a:hover{
+    background-color: #c4c4c4;
+    color: #020202;
+}
+.contents{
+    display: flex;
+    padding: 2rem 3rem;
+    color: white;
+}
+
+.gap{
+    width: 50%;
+    background-color: aqua;
+    height: 100%;
+}
+.content-desc{
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    
+}
+.content-desc p{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(120, 200, 180);
+}
+.content-desc h2{
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+.content-desc a{
+        color: white;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 0.8rem 0.6rem;
+        border: 2px solid rgb(34, 161, 129);
+        transition: 0.5s ease-in-out;
+}
+.box{
+    width: 100%;
+    padding:7rem 10rem 0rem 10rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+}
+
+.box .items{
+    position: relative;
+    background-color: #151515;
+    width: 25rem;
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 50px 30px;
+    color: white;
+    border: 1px solid transparent;
+    transition:0.5s ease-in-out;
+}
+.items i {
+    font-size: 40px;
+}
+.items h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.items p {
+    font-family: 'poppins', sans-serif;
+}
+.light{
+    width: 3px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transition: display 0.5s ease-in-out;
+    display: none;
+   
+    
+}
+.items:hover{
+    border: 1px solid rgb(34, 161, 129);
+}
+.items:hover .light{
+    display: inline;
+    
+}
+@media screen and (max-width:600px) {
+    nav{
+        padding: 1rem 1.5rem;
+    }
+    nav ul{
+        display: none;
+    }
+    .box {
+        flex-direction:column ;
+        padding:2rem;
+    }
+   
+}
+.services{
+    color: white;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    padding: 14rem 8rem 8rem 8rem; 
+    background-color: #0c0c0c;
+}
+.services h3,.work h3{
+    font-family: 'montserrat','sans-serif';
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 30px;
+}
+.services .light-service{
+    margin-top: 2px;
+    width: 4%;
+    height: 2px;
+    background-color: rgb(34, 161, 129);
+}
+.cat-main{
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cat-items{
+        display: flex;
+        flex-direction: column;
+         gap: 20px;
+        width: 20rem;
+        height: 20rem;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 4rem 3rem;
+        border-bottom: 1px solid #fff;
+}
+
+.cat-items i{
+    font-size: 25px;
+    color: rgb(120, 200, 180);
+}
+.cat-items h3{
+        font-size: 22px;
+}
+.cat-items p{
+    font-family: 'poppins';
+}
+#third{
+    width: 100%;
+ padding: 0rem 0rem 9rem 0rem;
+    background-color: #020202;
+    color: white;
+    font-family: 'montserrat','sans-serif';
+}
+
+.work .flex{
+    display: flex;
+    gap: 20px;
+    padding: 5rem 5rem 2rem 5rem;
+}
+.flex .light-service{
+    margin-top: 1.2rem;
+    width: 5rem;
+    height: 0.1rem;
+    background-color: rgb(34, 161, 129);
+}
+.third-img{
+    display: flex;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+/* Footer */
+
+#footer{
+    background-color: #0c0c0c;
+    width: 100%;
+    padding: 3rem 5rem 0rem 0rem;
+    color: #fff;
+}
+.foot h3{
+    font-family: 'montserrat','sans-serif';
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 8px;
+}
+.footer h3::after{
+        content: '';
+        width: 20px;
+        bottom: 0;
+        background-color: aqua;
+        left: 50%;
+        height: 2px;
+}
+.social{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.social .media{
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 9px;
+    border-radius: 50%;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.social .media:hover{
+    background-color: #ffff;
+    color: #000;
+}
+.media i{
+    font-size: 20px;
+}
+#footer p{
+    font-family: 'poppins';
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+
+
